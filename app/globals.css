@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @font-face {
-  font-family: "ClimateCrisis";
+  font-family: "Climate Crisis";
   src: url("./../public/fonts/ClimateCrisis-Regular.ttf") format("truetype");
 }
 @font-face {
@@ -12,6 +12,14 @@
 @font-face {
   font-family: "Butler";
   src: url("./../public/fonts/Butler_Regular.otf") format();
+}
+@font-face {
+  font-family: "Quiche Flare";
+  src: url("./../public/fonts/QuicheFlare-Regular.otf") format();
+}
+@font-face {
+  font-family: "Fields Display";
+  src: url("./../public/fonts/FieldsDisplay-Regular.otf") format();
 }
 
 .introduction-text {
@@ -89,11 +97,11 @@
   right: 180px;
 }
 
-.butterfly {
+/* .butterfly {
   position: relative;
   top: 50px;
   right: 50px;
-}
+} */
 
 .teasing_frown {
   /* position: relative; */
@@ -134,6 +142,7 @@
   font-size: 22.91px;
   line-height: 27.49px;
   transition: transform 0.3s ease;
+  border-radius: 10px;
 }
 
 .animated-button:hover {
@@ -141,6 +150,10 @@
   border: 1.1455152034759521px;
   background-color: #ffdbda;
   transform: scale(1.2);
+}
+
+.leadingText {
+  color: #ed6a5a;
 }
 
 body {

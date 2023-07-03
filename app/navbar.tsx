@@ -35,13 +35,13 @@ export default function Navbar() {
                 >
                     {isOpen ? (
                         <svg width="22" height="20" viewBox="0 0 29 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 3L26 34M26 3L3 34" stroke="#272727" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M3 3L26 34M26 3L3 34" stroke="#272727" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
 
                     ) : (
                         <div className="burger-menu">
                             <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.62885 1.70844H20.7212M1.62885 8.79109H20.7212M1.62885 15.8737H20.7212" stroke="#272727" stroke-width="2.42471" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M1.62885 1.70844H20.7212M1.62885 8.79109H20.7212M1.62885 15.8737H20.7212" stroke="#272727" strokeWidth="2.42471" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </div>
                     )}

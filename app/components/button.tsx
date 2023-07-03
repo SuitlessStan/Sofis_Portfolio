@@ -5,10 +5,11 @@ type AnimatedButtonProps = {
     className: string,
     height: number,
     width: number
+    onClick?: React.MouseEventHandler<HTMLButtonElement>
 }
-export default function AnimatedButton({ title, className, height, width }: AnimatedButtonProps) {
+export default function AnimatedButton({ title, className, height, width, onClick }: AnimatedButtonProps) {
     return (
-        <Button width={width} height={height} className={`bg-primary animated-button font-Butler ${className}`} borderRadius={10}>
+        <Button width={width} height={height} className={`bg-primary animated-button ${className}`} onClick={onClick}>
             {title}
         </Button>
     )
