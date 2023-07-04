@@ -43,26 +43,21 @@
 .outlined {
   color: #f2f0f0;
   -webkit-text-stroke: 4px #1433e6;
-  /* -webkit-text-fill-color: white; */
   border: 2.91px #f2f0f0;
   text-shadow: 7px 7px 0px #da8ec5;
-  /* box-shadow: 4.698422908782959px 4.698422908782959px 0px 0px #da8ec5; */
   line-height: 37px;
   letter-spacing: 4px;
 }
 
 .first-line {
-  /* font-size: 30px; */
   line-height: 37.35px;
 }
 
 .second-line {
-  /* font-size: 57.8px; */
   line-height: 71.98px;
 }
 
 .third-line {
-  /* font-size: 20px; */
   line-height: 24.9px;
 }
 
@@ -97,18 +92,6 @@
   right: 180px;
 }
 
-/* .butterfly {
-  position: relative;
-  top: 50px;
-  right: 50px;
-} */
-
-.teasing_frown {
-  /* position: relative; */
-  /* left: 150px; */
-  /* top: -200px; */
-}
-
 .portfolio-text {
   position: relative;
   left: 280px;
@@ -117,21 +100,23 @@
 
 .curved {
   width: 100%;
-  border-radius: 0 0 15% 15%;
+  /* border-radius: 0 0 85% 85%; */
+  height: 78vh;
 }
 
-.curved::before {
+/* .curved::before {
   height: 39vh;
   background-color: #ddc885;
   position: absolute;
   width: 100%;
   content: "";
-  bottom: 250px;
   z-index: -1000;
-}
+} */
 
 .curved-top {
-  height: 55vh;
+  background: #eacf87;
+  width: 100%;
+  height: 70vh;
 }
 
 .animated-button {
@@ -139,7 +124,6 @@
   box-shadow: 2.615856647491455px 2.615856647491455px 0px 0px #272727;
   font-family: Butler;
   font-weight: 900;
-  font-size: 22.91px;
   line-height: 27.49px;
   transition: transform 0.3s ease;
   border-radius: 10px;
@@ -150,6 +134,27 @@
   border: 1.1455152034759521px;
   background-color: #ffdbda;
   transform: scale(1.2);
+}
+
+.section {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+.section.active {
+  opacity: 1;
+}
+
+.check_button {
+  background-color: #da8ec5;
+  border: 1px solid #272727;
+  border-radius: 8px;
+  box-shadow: 2px 1px 0px 0px #282828;
+}
+
+.check_button_small {
+  background-color: #8b90ed;
+  border: 1px solid #272727;
 }
 
 .leadingText {

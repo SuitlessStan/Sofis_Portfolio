@@ -1,4 +1,4 @@
-import { Text, Stack, Container } from "@chakra-ui/react"
+import { Button, Text, Stack, Container } from "@chakra-ui/react"
 import React, { useEffect, useState } from "react"
 
 type DescriptionProps = {
@@ -6,6 +6,7 @@ type DescriptionProps = {
     spanText: string;
     spanColor?: string;
     leadingText: string;
+    className?: string;
 }
 
 export default function Description(props: DescriptionProps) {
@@ -39,9 +40,9 @@ export default function Description(props: DescriptionProps) {
     }, [props.leadingText, props.spanText, props.spanColor])
 
     return (
-        <Container className="" maxW={["container.sm", "container.lg"]} height={249}>
+        <Container className={props.className} maxW={["container.sm", "container.lg"]} height={249}>
             <Stack gap={0}>
-                <Text className="font-Butler" as="span" fontSize={[33]} fontWeight={900}>
+                <Text className="font-Butler" as="span" fontSize={[18, 28]} fontWeight={900}>
                     {props.heading}
                 </Text >
                 <Text className="font-Butler pl-3" fontSize={[15, 20]}>
@@ -52,16 +53,21 @@ export default function Description(props: DescriptionProps) {
                 <Text fontWeight={500} fontSize={[13, 22]}>
                     As a technician in audio-visual arts and web designer, I want to make every page a full <b className="font-black">experience.</b>
                 </Text>
-                <Text fontWeight={500} fontSize={[13, 22]} >
+                <Text fontWeight={700} fontSize={[13, 22]} >
                     <i>Where are you? The internet is too crowded!</i>
                 </Text>
                 <Text fontWeight={700} fontSize={[13, 18]}>
                     With so much content out there, it’s easy to <del>blend in</del>, making it hard to put yourself out there. Good user experience and eye-catching, <span className="text-orange font-extrabold">colorful</span> designs can really make <b>stand out</b>, tell a story and give users a genuine, and positive idea of what your brand is all about...
                 </Text>
-                <Text fontWeight={800} fontSize={[13, 18]}>
+                <Text fontWeight={800} fontSize={[13, 22]}>
                     Good news is, I can help you with that!
                 </Text>
             </Stack>
+            <div className="flex justify-center">
+                <Button marginTop={["2rem", "3.5rem"]} width={[105, 260]} height={[22.21, 55]} fontSize={[9.22, 20]} className="check_button font-Butler">
+                    CHECK IT OUT
+                </Button>
+            </div>
         </Container>
     )
 }
