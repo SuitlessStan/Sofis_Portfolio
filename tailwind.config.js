@@ -17,8 +17,9 @@ module.exports = {
         accent: "#1433E6",
         idk: "#604D53",
         grey: "#272727",
-        salmon: "#2C2C2C",
+        salmon: "#ED6A5A",
         orange: "#D17B0F",
+        vibrantBlue: "#0000DD",
       },
       fontFamily: {
         climateCrisis: ["Climate Crisis"],
