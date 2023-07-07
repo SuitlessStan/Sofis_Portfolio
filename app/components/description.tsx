@@ -21,17 +21,18 @@ export default function Description(props: DescriptionProps) {
                 </Text>
             </div>
             <div>
-                <span className="font-fieldsDisplay text-xl font-medium">
+                <span className="font-fieldsDisplay text-sm md:text-lg font-medium">
                     As a technician in audio-visual arts and web designer,
                     <br className="hidden sm:block md:hidden lg:hidden" /> I want to make every page a
                     <br className="hidden md:block" /> full <span className="font-black"> experience.</span>
-                    <br className="md:hidden" />
-                </span>
-                <span className="not-italic font-extrabold md:font-normal md:italic">
-                    Where are you? The internet is too crowded!
                 </span>
                 <br className="md:hidden" />
-                <Text fontWeight={700} fontSize={[13, 18]}>
+                <br className="hidden md:block" />
+                <Text fontWeight={500} fontSize={[13, 18]} className="not-italic font-extrabold md:font-normal md:italic">
+                    Where are you? The internet is too crowded!
+                </Text>
+                <br className="md:hidden" />
+                <Text fontWeight={500} fontSize={[13, 18]}>
                     With so much content out there, it’s easy to <del>blend in</del>, making it hard to put yourself out there. Good user experience and eye-catching, <span className="text-orange font-extrabold">colorful</span> designs can really make <b>stand out</b>, tell a story and give users a genuine, and positive idea of what your brand is all about...
                 </Text>
                 <Text fontWeight={800} fontSize={[13, 22]}>

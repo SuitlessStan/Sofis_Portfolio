@@ -2,7 +2,6 @@ import Image from 'next/image'
 
 export default function Profile() {
     return (
-
         <div className="p-1">
             <div className="sm:col-span-12 md:col-span-3">
                 <div className="flex justify-center items-center">
