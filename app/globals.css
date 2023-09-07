@@ -61,14 +61,6 @@
   line-height: 24.9px;
 }
 
-.background-image {
-  background-image: url("./../public/images/Rectangle.png");
-  background-size: cover;
-  background-position: center;
-  height: 419px;
-  width: 408px;
-}
-
 .spark {
   position: relative;
   right: 55px;
@@ -98,25 +90,28 @@
   top: -80px;
 }
 
-.curved {
+.curved-top {
   width: 100%;
-  /* border-radius: 0 0 85% 85%; */
-  height: 78vh;
+  height: 646.5px;
+  background-image: url("../public/images/Ellipse_desktop.png");
+  background-size: cover;
+  position: absolute;
+  top: -85px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* .curved::before {
-  height: 39vh;
-  background-color: #ddc885;
-  position: absolute;
-  width: 100%;
-  content: "";
-  z-index: -1000;
-} */
-
-.curved-top {
-  background: #eacf87;
-  width: 100%;
-  height: 70vh;
+@media (max-width: 768px) {
+  .curved-top {
+    height: 400.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../public/images/Ellipse_mobile.png");
+    background-position: center;
+  }
 }
 
 .animated-button {
@@ -136,6 +131,26 @@
   transform: scale(1.2);
 }
 
+.web-button {
+  transform: rotate(10deg);
+}
+
+.graphic-button {
+  transform: rotate(-10deg);
+}
+
+@media (max-width: 768px) {
+  .web-button {
+    transform: rotate(-10deg);
+    position: relative;
+  }
+
+  .graphic-button {
+    transform: rotate(0deg);
+    position: relative;
+  }
+}
+
 .section {
   opacity: 0;
   transition: opacity 0.3s ease-in;
@@ -152,6 +167,17 @@
   box-shadow: 2px 1px 0px 0px #282828;
 }
 
+@media (max-width: 768px) {
+  .check_button {
+    background-color: #8b90ed;
+    width: 105px;
+    height: 22.21px;
+    padding: 3.230769395828247px 62.19231033325195px 3.230769395828247px 62.19231033325195px;
+    border-radius: 3.230769395828247px;
+    border: 0.4038461744785309px;
+  }
+}
+
 .check_button_small {
   background-color: #8b90ed;
   border: 1px solid #272727;
@@ -160,6 +186,36 @@
 .leadingText {
   color: #ed6a5a;
 }
+
+.about-section {
+  width: 100%;
+  position: absolute;
+  top: 1300px;
+  height: 80vh;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    top: 1060px;
+  }
+}
+
+.blue-border {
+  clear: both;
+  display: block;
+  width: 96%;
+  background: #0000dd;
+  height: 0.5px;
+  border: 2px solid #0000dd;
+  box-shadow: 2px 2px 0px 0px #da8ec5;
+}
+
+/* @media (max-width: 768px) {
+  .about-section {
+    position: absolute;
+    top: 1100px;
+  }
+} */
 
 body {
   color: rgb(var(--foreground-rgb));
